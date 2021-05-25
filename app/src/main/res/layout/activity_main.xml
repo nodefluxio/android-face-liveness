@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#330E63 "
     tools:context=".MainActivity">
 
     <Button
@@ -42,7 +43,7 @@
         android:layout_width="263dp"
         android:layout_height="91dp"
         android:layout_marginTop="360dp"
-        android:text="We will need you to perform simple sequence of actions within time limit. One will involve blinking eye"
+        android:text="Please take a selfie to help us confirm your identity. We need you to perform a simple sequence of action within the defined time limit."
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="18sp"
