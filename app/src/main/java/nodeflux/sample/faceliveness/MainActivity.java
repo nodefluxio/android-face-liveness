@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
     private static final int CAMERA_PERMISSION_CODE = 100;
     private static final int STORAGE_PERMISSION_CODE = 101;
     Intent intent;
-    Group intro;
-    Group success;
-    Group fail;
+//    Group intro;
+//    Group success;
+//    Group fail;
     Button startBtn;
     Boolean isFirst = true;
 
@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        intro = findViewById(R.id.intro);
-        success = findViewById(R.id.success);
-        fail = findViewById(R.id.fail);
-        startBtn = findViewById(R.id.button);
+//        intro = findViewById(R.id.intro);
+//        success = findViewById(R.id.success);
+//        fail = findViewById(R.id.fail);
+        startBtn = findViewById(R.id.btn_start);
         message = findViewById(R.id.message);
 
         try {
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        setView(0, null);
+//        setView(0, null);
 
         intent = new Intent(MainActivity.this, Liveness.class);
         intent.putExtra("ACCESS_KEY", "{ACCESS_KEY}");
@@ -58,19 +58,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSuccess(boolean isLive, Bitmap bitmap, double score) {
                 if (isLive) {
-                    setView(1, null);
+//                    setView(1, null);
                 } else {
-                    setView(2, "Let's try again to check your liveness");
+//                    setView(2, "Let's try again to check your liveness");
                 }
                 Toast.makeText(getApplicationContext(), String.valueOf(score), Toast.LENGTH_LONG).show();
             }
 
             @Override
             public void onError(String message) {
-                setView(2, message);
+//                setView(2, message);
 //                Toast.makeText(MainActivity.this, message, Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+    public void onStartPressed(View v) {
+        Intent myIntent = new Intent(MainActivity.this, TncActivity.class);
+        MainActivity.this.startActivity(myIntent);
     }
 
     public void onLivenessPressed(View v) {
@@ -82,30 +87,30 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
-    public void setView(int state, String errMessage) {
-        if (state == 1) {
-            intro.setVisibility(View.GONE);
-            success.setVisibility(View.VISIBLE);
-            fail.setVisibility(View.GONE);
-            if (!isFirst) {
-                startBtn.setText("Start Over");
-                message.setText(errMessage);
-            }
-
-        } else if (state == 2) {
-            intro.setVisibility(View.GONE);
-            success.setVisibility(View.GONE);
-            fail.setVisibility(View.VISIBLE);
-            startBtn.setText("Try Again");
-            message.setText(errMessage);
-        } else {
-            intro.setVisibility(View.VISIBLE);
-            success.setVisibility(View.GONE);
-            fail.setVisibility(View.GONE);
-            message.setText(errMessage);
-        }
-    }
+//
+//    public void setView(int state, String errMessage) {
+//        if (state == 1) {
+//            intro.setVisibility(View.GONE);
+//            success.setVisibility(View.VISIBLE);
+//            fail.setVisibility(View.GONE);
+//            if (!isFirst) {
+//                startBtn.setText("Start Over");
+//                message.setText(errMessage);
+//            }
+//
+//        } else if (state == 2) {
+//            intro.setVisibility(View.GONE);
+//            success.setVisibility(View.GONE);
+//            fail.setVisibility(View.VISIBLE);
+//            startBtn.setText("Try Again");
+//            message.setText(errMessage);
+//        } else {
+//            intro.setVisibility(View.VISIBLE);
+//            success.setVisibility(View.GONE);
+//            fail.setVisibility(View.GONE);
+//            message.setText(errMessage);
+//        }
+//    }
 
     public boolean isCameraPermissionGranted() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
