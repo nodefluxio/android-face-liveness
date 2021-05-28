@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Nodeflux Face Liveness</string>
+    <string name="main_title">Lets\'s make sure nobody\'s impersonating you</string>
+    <string name="main_subtitle">Please take a selfie to help us confirm your liveness. We need you to perform a simple sequence of action within the defined time limit.</string>
+    <string name="main_button">START</string>
+    <string name="tnc_header_title">Terms and Conditions</string>
+    <string name="tnc_title">Take a selfie</string>
+    <string name="tnc_subtitle">Please take a selfie to help us confirm your identity.  Would not take more than a minute.</string>
+    <string name="tnc_direction">
+        &#8226; Position your face in  available face area\n&#8226; Make sure you have a good lightning\n&#8226; Hold your phone at eye level and look straight to the camera, then follow the instruction.
+    </string>
+    <string name="tnc_protect">Your data is not be saved on our system.</string>
+    <string name="tnc_button">VERIFY THE LIVENESS</string>
+    <string name="result_back"><u>Back to Home Screen</u></string>
+</resources>
