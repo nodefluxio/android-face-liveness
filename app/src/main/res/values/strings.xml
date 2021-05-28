@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Nodeflux Face Liveness</string>
     <string name="main_title">Lets\'s make sure nobody\'s impersonating you</string>
-    <string name="main_subtitle">Please take a selfie to help us confirm your identity. We need you to perform a simple sequence of action within the defined time limit.</string>
+    <string name="main_subtitle">Please take a selfie to help us confirm your liveness. We need you to perform a simple sequence of action within the defined time limit.</string>
     <string name="main_button">START</string>
     <string name="tnc_header_title">Terms and Conditions</string>
     <string name="tnc_title">Take a selfie</string>
@@ -11,4 +11,5 @@
     </string>
     <string name="tnc_protect">Your data is not be saved on our system.</string>
     <string name="tnc_button">VERIFY THE LIVENESS</string>
+    <string name="result_back"><u>Back to Home Screen</u></string>
 </resources>
