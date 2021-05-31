@@ -1,5 +1,7 @@
 # android-face-liveness
 
+![icon](/assets/icon.png)
+
 Nodeflux Face Liveness demo application with SDK sdk-liveness-0.3.2.aar
 
 ## Requirement
@@ -15,21 +17,21 @@ Nodeflux Face Liveness demo application with SDK sdk-liveness-0.3.2.aar
 1. Go to menu File -> New -> New Project
 2. Choose template Empty Activity and click Next
 
-![diagram](/assets/android_sdk_1.png)
+![image](/assets/android_sdk_1.png)
 
 3. Choose your application Name, Package name, Language, and most importantly Minimum SDK have to be 21 and above.
 4. After done, click Finish.
 
-![diagram](/assets/android_sdk_2.png)
+![image](/assets/android_sdk_2.png)
 
 ### Prepare SDK lib
 5. Make sure Android Studio project view as Project
 
-![diagram](/assets/android_sdk_3.png)
+![image](/assets/android_sdk_3.png)
 
 6. Navigate to app/libs and copy your sdk there like below
 
-![diagram](/assets/android_sdk_4.png)
+![image](/assets/android_sdk_4.png)
 
 7. Next open your application build.gradle and add below dependencies.
 
@@ -44,7 +46,7 @@ implementation 'com.android.volley:volley:1.1.1'
 
 8. Next open your application build.gradle and add below dependencies.
 
-![diagram](/assets/android_sdk_5.png)
+![image](/assets/android_sdk_5.png)
 
 ### Setup AndroidManifest.xml
 9. Make sure include sdk activity
@@ -77,7 +79,7 @@ implementation 'com.android.volley:volley:1.1.1'
 ### Setup activity code
 10. Go to MainActivity
 
-![diagram](/assets/android_sdk_6.png)
+![image](/assets/android_sdk_6.png)
 
 11. Copy below code into your MainActivity
 ```
@@ -138,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
 ### Setup activity layout
 12. Go to activity_main
 
-![diagram](/assets/android_sdk_7.png)
+![image](/assets/android_sdk_7.png)
 
 13. Copy below xml to your activity_main
 
@@ -170,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
 
 15. Click the button and follow instructions
 
-![diagram](/assets/android_sdk_8.png)
+![image](/assets/android_sdk_8.png)
 
 
 ## Customization
@@ -179,7 +181,7 @@ Nodeflux SDK Liveness allows you to change face guidance area color, instruction
 
 ### Face guidance area color
 
-![diagram](/assets/android_sdk_9.png)
+![image](/assets/android_sdk_9.png)
 
 Copy color below to res/values/colors.xml and edit color to your desire
 ```
@@ -188,7 +190,7 @@ Copy color below to res/values/colors.xml and edit color to your desire
 
 ### Instruction text area color
 
-![diagram](/assets/android_sdk_10.png)
+![image](/assets/android_sdk_10.png)
 
 Copy color below to res/values/colors.xml and edit color to your desire
 ```
@@ -197,7 +199,7 @@ Copy color below to res/values/colors.xml and edit color to your desire
 
 ### Instruction text
 
-![diagram](/assets/android_sdk_11.png)
+![image](/assets/android_sdk_11.png)
 
 Copy string below to res/values/strings.xml and edit string to your desire
 ```
