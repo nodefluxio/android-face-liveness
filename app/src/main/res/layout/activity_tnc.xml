@@ -14,7 +14,7 @@
         android:id="@+id/tnc_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:text="@string/tnc_title"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
@@ -27,11 +27,10 @@
         android:id="@+id/tnc_subtitle"
         android:layout_width="281dp"
         android:layout_height="55dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="8dp"
         android:text="@string/tnc_subtitle"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tnc_title" />
 
@@ -39,7 +38,7 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tnc_subtitle"
@@ -47,9 +46,9 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="295dp"
-        android:layout_height="104dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="296dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="24dp"
         android:text="@string/tnc_direction"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,39 +58,38 @@
         android:id="@+id/tnc_line"
         android:layout_width="370dp"
         android:layout_height="1dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginBottom="20dp"
         android:background="#7A4CA4"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/tnc_protect"
+        app:layout_constraintBottom_toTopOf="@+id/btn_start"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.194"
-        app:layout_constraintStart_toEndOf="@+id/ico_protect"
-        app:layout_constraintTop_toBottomOf="@+id/tnc_line" />
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toEndOf="@+id/ico_protect" />
 
     <ImageView
         android:id="@+id/ico_protect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_start"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tnc_line"
         app:srcCompat="@drawable/ic_asset3" />
 
     <Button
         android:id="@+id/btn_start"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/colorPrimaryDark"
         android:onClick="onLivenessPressed"
         android:text="@string/tnc_button"
@@ -99,9 +97,6 @@
         app:cornerRadius="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

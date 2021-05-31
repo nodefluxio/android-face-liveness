@@ -11,7 +11,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="68dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -21,16 +21,14 @@
         android:id="@+id/tv_title"
         android:layout_width="220sp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
         android:text="@string/main_title"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_subtitle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.523" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/btn_start"
@@ -44,27 +42,27 @@
         app:cornerRadius="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tv_subtitle"
         android:layout_width="238dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="172dp"
+        android:layout_marginTop="36dp"
         android:text="@string/main_subtitle"
         android:textAlignment="center"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="36dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_start"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
