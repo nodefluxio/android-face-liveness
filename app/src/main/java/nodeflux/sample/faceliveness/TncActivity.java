@@ -28,8 +28,8 @@ public class TncActivity extends AppCompatActivity {
         }
 
         intent = new Intent(TncActivity.this, Liveness.class);
-        intent.putExtra("ACCESS_KEY", "{ACCESS_KEY}");
-        intent.putExtra("SECRET_KEY", "{SECRET_KEY}");
+        intent.putExtra("ACCESS_KEY", getResources().getString(R.string.access_key));
+        intent.putExtra("SECRET_KEY", getResources().getString(R.string.secret_key));
         intent.putExtra("THRESHOLD", 0.7);
         Liveness.setUpListener(new Liveness.LivenessCallback() {
             @Override
