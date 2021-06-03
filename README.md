@@ -13,6 +13,8 @@ Nodeflux Face Liveness demo application with SDK sdk-liveness-0.3.2.aar
 
 ## Getting Started
 
+**Please notes this method is just for example, you shouldn't save secrets in resources.**
+
 Setup key first, you can get your key at [here](https://cloud.nodeflux.io/). Create secrets.xml under `values` folder and put your access_key and secret_key inside
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
