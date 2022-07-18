@@ -1,17 +1,21 @@
 package nodeflux.sample.faceliveness;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.util.Base64;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import org.json.JSONObject;
+
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.OutputStream;
 import java.util.Objects;
 
 import nodeflux.sdk.liveness.Liveness;
+import nodeflux.sdk.liveness.NodefluxLivenessSDKOptions;
 
 public class TncActivity extends AppCompatActivity {
     Intent intent;
@@ -27,24 +31,27 @@ public class TncActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        intent = new Intent(TncActivity.this, Liveness.class);
-        intent.putExtra("ACCESS_KEY", getResources().getString(R.string.access_key));
-        intent.putExtra("SECRET_KEY", getResources().getString(R.string.secret_key));
-        intent.putExtra("THRESHOLD", 0.7);
-        Liveness.setUpListener(new Liveness.LivenessCallback() {
+        NodefluxLivenessSDKOptions sdkOptions = new NodefluxLivenessSDKOptions();
+
+        sdkOptions.setAccessKey(getResources().getString(R.string.access_key));
+        sdkOptions.setSecretKey(getResources().getString(R.string.secret_key));
+        sdkOptions.setThreshold(0.7);
+
+        Liveness.setUpListener(sdkOptions, new Liveness.LivenessCallback() {
             @Override
-            public void onSuccess(boolean isLive, Bitmap bitmap, double score) {
+            public void onSuccess(boolean b, String imageBase64, double score, String s1, JSONObject jsonObject) {
                 String rootPath = getExternalCacheDir().toString();
                 String filePath = rootPath + "/face.png";
                 File root = new File(rootPath);
-                File file = new File(filePath);
                 try {
                     if (!root.exists()) {
                         root.mkdirs();
                     }
-                    FileOutputStream outStream = new FileOutputStream(file);
-                    bitmap.compress(Bitmap.CompressFormat.PNG, 85, outStream);
-                    outStream.close();
+                    byte[] imageByte = Base64.decode(imageBase64, 0);
+
+                    try (OutputStream stream = new FileOutputStream(filePath)) {
+                        stream.write(imageByte);
+                    }
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -52,14 +59,19 @@ public class TncActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onError(String message) {
+            public void onSuccessWithSubmissionToken(String s, String s1) {
+
+            }
+
+            @Override
+            public void onError(String message, JSONObject jsonObject) {
                 callResultActivty(false, message, 0.0, null);
             }
         });
     }
 
     public void onLivenessPressed(View v) {
-        startActivity(intent);
+        startActivity(new Intent(TncActivity.this, Liveness.class));
     }
 
     public void callResultActivty(Boolean success, String message, Double score, String imagePath) {
