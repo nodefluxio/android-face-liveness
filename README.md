@@ -6,10 +6,13 @@ Nodeflux Face Liveness demo application with SDK sdk-liveness-0.3.2.aar
 
 ## Requirement
 
-- Minimal android API: 21
-- Maximal android API: 30
-- Docs use java
-- IDE use Android Studio
+- Minimal Android Studio Chipmunk (2021.2.1 Patch 1)
+- Minimal Android Gradle Plugin Version: 7.2.1
+- Minimal Gradle version : 7.4.2
+- Minimal Java Version: 11
+- Minimal Kotlin Version: 1.7.0
+- Minimal compileSdkVersion: 32
+- Minimal buildToolsVersion: 30.0.3
 
 ## Getting Started
 
@@ -27,6 +30,23 @@ Setup key first, you can get your key at [here](https://cloud.nodeflux.io/). Cre
 After that you're good to go and you're ready to build your application.
 
 For more information visit [here](https://www.nodeflux.io/) or you can contact us at [here](https://www.nodeflux.io/Contact-Us)
+
+**Configure Nodeflux Liveness SDK**
+
+Before you start Nodeflux Liveness SDK Activity, if you want to change any sdk default settings, specify those settings with NodefluxLivenessSDKOptions Object. You can change the following settings:
+
+| Settings                     | Data Type | Descriptions                                                      | Default Value |
+| ---------------------------- |:---------:| -----------------------------------------------------------------:| ------------- |
+| setAccessKey                 | String    | optional (required if you using basic implementation)             | nil           |
+| setSecretKey                 | String    | optional (required if you using basic implementation)             | nil           |
+| setSubmissionToken           | String    | optional (required if you using submission_token implementation)  | nil           |
+| setThreshold                 | Double    | optional (number of threshold for acceptence score)               | 0.7           |
+| setActiveLivenessFlag        | Boolean   | optional (boolean flag to activate or deactivate active liveness) | true          |
+| setImageQualityFilter        | Boolean   | optional (boolean flag to activate or deactivate iqa )            | nil           |
+| setImageQualityAssessment    | String    | optional (custom value for iqa parameter)                         | nil           |
+| setTimeoutThreshold          | Int       | optional (millisecond value of active liveness duration)          | 15000         |
+| setGestureToleranceThreshold | Int       | optional (millisecond value of each gesture tollerance)           | 3000          |
+
 
 ## Customization
 
