@@ -1,6 +1,6 @@
 # android-face-liveness
 
-![icon](/assets/icon.png)
+![icon](./assets/icon.png)
 
 Nodeflux Face Liveness demo application with SDK sdk-liveness-1.0.2.aar
 
