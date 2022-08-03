@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">livenesskotlinsample</string>
+    <string name="nodeflux_liveness_sdk_kotlin_sample">Nodeflux Liveness SDK Kotlin Sample</string>
+    <string name="start">START</string>
+</resources>
