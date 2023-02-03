@@ -14,8 +14,8 @@ import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.util.Objects;
 
-import nodeflux.sdk.liveness.Liveness;
-import nodeflux.sdk.liveness.NodefluxLivenessSDKOptions;
+import identifai.sdk.liveness.IdentifaiLivenessSDKOptions;
+import identifai.sdk.liveness.Liveness;
 
 public class TncActivity extends AppCompatActivity {
     Intent intent;
@@ -31,7 +31,7 @@ public class TncActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        NodefluxLivenessSDKOptions sdkOptions = new NodefluxLivenessSDKOptions();
+        IdentifaiLivenessSDKOptions sdkOptions = new IdentifaiLivenessSDKOptions();
 
         sdkOptions.setAccessKey(getResources().getString(R.string.access_key));
         sdkOptions.setSecretKey(getResources().getString(R.string.secret_key));

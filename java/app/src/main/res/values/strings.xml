@@ -12,4 +12,28 @@
     <string name="tnc_protect">Your data is not be saved on our system.</string>
     <string name="tnc_button">VERIFY THE LIVENESS</string>
     <string name="result_back"><u>Back to Home Screen</u></string>
+    <string name="left_orientation" translatable="false">Look over your left shoulder</string>
+    <string name="right_orientation" translatable="false">Look over your Right shoulder</string>
+    <string name="left_eye_blink" translatable="false">Blink your left eye</string>
+    <string name="right_eye_blink" translatable="false">Blink your right eye</string>
+    <string name="finished" translatable="false">Finish</string>
+    <string name="repeat_from_start" translatable="false">Start to repeat in 1.5 seconds</string>
+    <string name="eye_blink" translatable="false">Blink your eyes</string>
+    <string name="one_hold" translatable="false">Smile and make sure your eyes open in 3 seconds</string>
+    <string name="two_hold" translatable="false">Smile and make sure your eyes open in 2 seconds</string>
+    <string name="three_hold" translatable="false">Smile and make sure your eyes open in 1 second</string>
+    <string name="one_hold_reset" translatable="false">Face is not steady inside the oval, repeat in 3 seconds</string>
+    <string name="two_hold_reset" translatable="false">Face is not steady inside the oval, repeat in 2 seconds</string>
+    <string name="three_hold_reset" translatable="false">Face is not steady inside the oval, repeat in 1 second</string>
+    <string name="time_out" translatable="false">Time is up, start again</string>
+    <string name="hold_failed" translatable="false">Head is not steady, process failed</string>
+    <string name="hold_process" translatable="false">Hold steady</string>
+    <string name="shake_left" translatable="false">Tilt your head to the left</string>
+    <string name="shake_right" translatable="false">Tilt your head to the Right</string>
+    <string name="nod_up" translatable="false">Nod your head up</string>
+    <string name="nod_down" translatable="false">Nod your head down</string>
+    <string name="smile" translatable="false">Hold steady and Smile while blinking your eyes</string>
+    <string name="not_smile" translatable="false">Hold steady without smiling</string>
+    <string name="start" translatable="false">Make sure your face straight to the oval and not covered</string>
+    <string name="start_hold" translatable="false">Bring your uncovered face closer to the oval and keep it center!</string>
 </resources>

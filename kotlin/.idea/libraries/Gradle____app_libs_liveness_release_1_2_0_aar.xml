@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/liveness-release-1.2.0.aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c1a1bf1f3cd8d3a623d54f89398f322f/transformed/liveness-release-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c1a1bf1f3cd8d3a623d54f89398f322f/transformed/liveness-release-1.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c1a1bf1f3cd8d3a623d54f89398f322f/transformed/liveness-release-1.2.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
