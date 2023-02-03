@@ -9,8 +9,8 @@ import android.view.View
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import nodeflux.sdk.liveness.Liveness
-import nodeflux.sdk.liveness.NodefluxLivenessSDKOptions
+import identifai.sdk.liveness.IdentifaiLivenessSDKOptions
+import identifai.sdk.liveness.Liveness
 import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val sdkOptions = NodefluxLivenessSDKOptions()
+        val sdkOptions = IdentifaiLivenessSDKOptions()
 
         sdkOptions.setAccessKey(resources.getString(R.string.access_key))
         sdkOptions.setSecretKey(resources.getString(R.string.secret_key))

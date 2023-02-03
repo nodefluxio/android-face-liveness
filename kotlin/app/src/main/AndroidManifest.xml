@@ -29,7 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="nodeflux.sdk.liveness.Liveness" />
+        <activity android:name="identifai.sdk.liveness.Liveness" />
     </application>
 
 </manifest>

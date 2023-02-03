@@ -54,7 +54,7 @@ Nodeflux SDK Liveness allows you to change face guidance area color, instruction
 
 ### Face guidance area color
 
-![image](/assets/android_sdk_9.png)
+![image](./assets/android_sdk_9.png)
 
 Copy color below to res/values/colors.xml and edit color to your desire
 ```
@@ -63,7 +63,7 @@ Copy color below to res/values/colors.xml and edit color to your desire
 
 ### Instruction text area color
 
-![image](/assets/android_sdk_10.png)
+![image](./assets/android_sdk_10.png)
 
 Copy color below to res/values/colors.xml and edit color to your desire
 ```
@@ -72,7 +72,7 @@ Copy color below to res/values/colors.xml and edit color to your desire
 
 ### Instruction text
 
-![image](/assets/android_sdk_11.png)
+![image](./assets/android_sdk_11.png)
 
 Copy string below to res/values/strings.xml and edit string to your desire
 ```
